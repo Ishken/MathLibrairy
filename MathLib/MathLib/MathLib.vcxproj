@@ -108,6 +108,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir)Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,6 +145,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalUsingDirectories>Include;Include\Geometry;</AdditionalUsingDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -164,6 +167,7 @@
     <ClCompile Include="Src\Mat.cpp" />
     <ClCompile Include="Src\Mat4.cpp" />
     <ClCompile Include="Src\Maths.cpp" />
+    <ClCompile Include="Src\Quaternion.cpp" />
     <ClCompile Include="Src\Ref3.cpp" />
     <ClCompile Include="Src\Vec2.cpp" />
     <ClCompile Include="Src\Vec3.cpp" />
@@ -181,6 +185,7 @@
     <ClInclude Include="Include\Mat4.h" />
     <ClInclude Include="Include\MathDefines.h" />
     <ClInclude Include="Include\Maths.hpp" />
+    <ClInclude Include="Include\Quaternion.h" />
     <ClInclude Include="Include\Ref3.h" />
     <ClInclude Include="Include\Vec2.h" />
     <ClInclude Include="Include\Vec3.h" />
